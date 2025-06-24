@@ -5,7 +5,7 @@ FROM openjdk:21-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file into the container
-COPY target/assessment-0.0.1-SNAPSHOT.jar /app/assessment.jar
+COPY target/BookApi-0.0.1-SNAPSHOT.jar /app/assessment.jar
 
 # Expose the port your app listens on
 EXPOSE 8080
