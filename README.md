@@ -2,6 +2,8 @@
 
 A simple RESTful API for managing books in a library system. Built with **Spring Boot 3.4.1**, **H2 Database**, **Spring Data JPA**, **Lombok**, and **Swagger (SpringDoc OpenAPI)**.
 
+Deployed : RENDER (Docker image)
+LIVE : https://book-api-yw9t.onrender.com
 ---
 
 ## Features
@@ -40,6 +42,8 @@ This project includes a CI/CD pipeline using GitHub Actions, which automatically
 ---
 
 ## API Endpoints
+
+LIVE : https://book-api-yw9t.onrender.com/
 
 | Method | Endpoint                 | Description         |
 |--------|--------------------------|---------------------|
