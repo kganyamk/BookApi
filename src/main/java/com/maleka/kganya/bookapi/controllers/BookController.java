@@ -50,7 +50,7 @@ public class BookController {
         return service.update(id, book);
     }
 
-    @Operation(summary = "Delete a book")
+    @Operation(summary = "Delete the book")
     @DeleteMapping("/{id}")
     public void delete(
             @Parameter(description = "ID of the book to delete") @PathVariable Long id) {
