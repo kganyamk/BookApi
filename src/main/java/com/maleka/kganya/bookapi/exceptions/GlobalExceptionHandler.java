@@ -39,21 +39,7 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(errors, HttpStatus.BAD_REQUEST);
     }
 
-    /**
-     * Handles {@link ResourceNotFoundException}, which is thrown when a requested resource
-     * is not found in the application.
-     *
-     * @param ex the exception indicating the resource was not found
-     * @return a {@link ResponseEntity} with an error message and a NOT_FOUND status
-     */
-    @ExceptionHandler(ResourceNotFoundException.class)
-    public ResponseEntity<Object> handleResourceNotFound(ResourceNotFoundException ex) {
-        // Return a structured error response for resource not found
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(Map.of(
-                "error", "Resource Not Found",
-                "message", ex.getMessage()
-        ));
-    }
+
 
     /**
      * Handles {@link InvalidDataException}, which is thrown when invalid data is encountered.
